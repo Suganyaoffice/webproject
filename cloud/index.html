@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RCM Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4B0082;
+      --accent-color: #6A0DAD;
+      --light-bg: #f5f5ff;
+      --text-color: #333;
+      --white: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      background-color: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--accent-color);
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .home {
+      background: var(--light-bg);
+    }
+
+    .home h1 {
+      font-size: 48px;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .home p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      background: var(--accent-color);
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #550080;
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 17px;
+    }
+
+    .rcm-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 40px auto 0;
+    }
+
+    .rcm-card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: left;
+      transition: transform 0.3s ease;
+    }
+
+    .rcm-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .rcm-card h4 {
+      margin-bottom: 10px;
+      color: var(--accent-color);
+    }
+
+    .contact p {
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        width: 100%;
+      }
+
+      nav ul li a {
+        display: block;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">RCM Solutions</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#rcm">RCM Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section class="home" id="home">
+    <h1>Welcome to RCM Solutions</h1>
+    <p>We empower healthcare providers with full-cycle revenue management—minimizing denials, maximizing revenue, and ensuring compliance.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>RCM Solutions is a trusted healthcare outsourcing partner specializing in end-to-end revenue cycle management. Our team of certified professionals ensures that your practice remains financially healthy while you focus on delivering excellent care.</p>
+  </section>
+
+  <!-- RCM Process -->
+  <section class="rcm-process" id="rcm">
+    <h2 class="section-title">Our RCM Process</h2>
+    <div class="rcm-cards">
+      <div class="rcm-card">
+        <h4>1. Patient Registration</h4>
+        <p>Accurate demographic and insurance data entry for faster claims processing.</p>
+      </div>
+      <div class="rcm-card">
+        <h4>2. Eligibility Verification</h4>
+        <p>We verify benefits and insurance before appointments to reduce denials.</p>
+      </div>
+      <div class="rcm-card">
+        <h4>3. Medical Coding</h4>
+        <p>Expert coding with ICD-10, CPT, and HCPCS for proper claim classification.</p>
+      </div>
+      <div class="rcm-card">
+        <h4>4. Charge Entry & Submission</h4>
+        <p>We capture all billable services and submit clean claims to payers.</p>
+      </div>
+      <div class="rcm-card">
+        <h4>5. Payment Posting</h4>
+        <p>Automated ERA posting with accurate reconciliation and adjustments.</p>
+      </div>
+      <div class="rcm-card">
+        <h4>6. AR Follow-up</h4>
+        <p>Dedicated AR team works on unpaid claims and rejections.</p>
+      </div>
+      <div class="rcm-card">
+        <h4>7. Denial Management</h4>
+        <p>We analyze and resolve denials quickly to recover revenue.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: cloudtechnologies.com</p>
+    <p>Phone: +91-00000 00000</p>
+    <p>Location: XXXX XXXXX, India</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 RCM Solutions. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
